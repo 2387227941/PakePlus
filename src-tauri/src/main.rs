@@ -26,7 +26,7 @@ fn main() {
     tauri::Builder::default()
         .setup(|app| {
             let app_handle = app.handle();
-            let window_json = r#"{"label":"SverU","url":"http://192.168.120.100/WebClientNew/Login","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","fileDropEnabled":true,"center":true,"width":800,"height":600,"minWidth":null,"minHeight":null,"maxWidth":null,"maxHeight":null,"resizable":true,"maximizable":true,"minimizable":true,"closable":true,"title":"资源库后台管理系统","fullscreen":false,"focus":false,"transparent":false,"maximized":false,"visible":true,"decorations":true,"alwaysOnTop":false,"contentProtected":false,"skipTaskbar":false,"titleBarStyle":"Visible","hiddenTitle":false,"acceptFirstMouse":false,"tabbingIdentifier":""}"#;
+            let window_json = r#"{"label":"SverU","url":"http://192.168.120.100:7007","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","fileDropEnabled":true,"center":true,"width":800,"height":600,"minWidth":null,"minHeight":null,"maxWidth":null,"maxHeight":null,"resizable":true,"maximizable":true,"minimizable":true,"closable":true,"title":"资源库后台管理系统","fullscreen":false,"focus":false,"transparent":false,"maximized":false,"visible":true,"decorations":true,"alwaysOnTop":false,"contentProtected":false,"skipTaskbar":false,"titleBarStyle":"Visible","hiddenTitle":false,"acceptFirstMouse":false,"tabbingIdentifier":""}"#;
             match json_to_window_config(window_json) {
                 Ok(config) => {
                     println!("Parsed WindowConfig: {:?}", config);
