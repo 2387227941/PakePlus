@@ -1,6 +1,6 @@
 [package]
 name = "资源库后台管理系统"
-version = "0.0.3"
+version = "0.0.4"
 description = ""
 authors = ["1024xiaoshen"]
 edition = "2021"
