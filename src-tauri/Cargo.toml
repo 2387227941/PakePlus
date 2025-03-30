@@ -1,6 +1,6 @@
 [package]
-name = "资源库后台管理系统"
-version = "0.1.1"
+name = "教学常规资料管理系统"
+version = "0.1.2"
 description = ""
 authors = ["1024xiaoshen"]
 edition = "2021"
